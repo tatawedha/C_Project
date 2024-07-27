@@ -1,32 +1,40 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import TabsPage from '../views/TabsPage.vue'
+import BasePage from '../views/BasePage/BasePage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: 'index/'
   },
   {
-    path: '/tabs/',
-    component: TabsPage,
+    path: '/index/',
+    component: BasePage,
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: 'home'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        path: 'home',
+        component: () => import('@/views/HomePage/HomePage.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'profile',
+        component: () => import('@/views/ProfilePage/ProfilePage.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
-      }
+        path: 'sync',
+        component: () => import('@/views/SyncPage/SyncPage.vue')
+      },
+      {
+        path: 'transaction',
+        component: () => import('@/views/TransactionPage/TransactionPage.vue')
+      },
+      {
+        path: 'wallet',
+        component: () => import('@/views/WalletPage/WalletPage.vue')
+      },
     ]
   }
 ]

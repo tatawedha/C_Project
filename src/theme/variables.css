@@ -1,2 +1,363 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    --ion-font-family: 'Manrope';
+    --ion-text-color: #757575;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fz-8{
+    font-size: 8px;
+}
+
+.fz-10{
+    font-size: 10px;
+}
+
+.fz-12{
+    font-size: 12px;
+}
+
+.fz-14{
+    font-size: 14px;
+}
+
+.fz-16{
+    font-size: 16px;
+}
+
+.fz-18{
+    font-size: 18px;
+}
+
+.fz-20{
+    font-size: 20px;
+}
+
+.fz-22{
+    font-size: 22px;
+}
+
+.fz-24{
+    font-size: 24px;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-600{
+    font-weight:600;
+}
+
+.fw-700{
+    font-weight:700;
+}
+
+.fw-900{
+    font-weight:900;
+}
+
+.fc-grey{
+    color: #757575;
+}
+
+.fc-grey-2{
+    color: #9E9E9E;
+}
+
+.fc-black{
+    color: #0A0A0A;
+}
+
+.fc-primary{
+    color: #2F63C8;
+}
+
+.fc-success{
+    color: #1DA84D;
+}
+
+.fc-warning{
+    color: #FFB200;
+}
+
+.fc-danger{
+    color: #ED4032;
+}
+
+.fc-info{
+    color: #08B0D5;
+}
+
+.fc-white{
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: #2F63C8;
+}
+
+.bg-success{
+    background-color: #1DA84D;
+}
+
+.bg-warning{
+    background-color: #FFB200;
+}
+
+.bg-danger{
+    background-color: #ED4032;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-100-flex{
+    width: 100%;
+    display: flex;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.custom-form {
+    --background: #fff;
+    --color: #C2C2C2;
+    --placeholder-color: #C2C2C2;
+    --placeholder-opacity: 1;
+    --padding-bottom: 12px;
+    --padding-end: 15px;
+    --padding-start: 15px;
+    --padding-top: 12px;
+    --border-radius:8px;
+    --highlight-color-focused: none;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sc-ion-input-md-s>ion-button[slot=end].button-has-icon-only{
+    --padding-start:0;
+    --padding-bottom:0;
+    --padding-top:0;
+    --padding-end:0;
+}
+
+.custom-form .custom-icon-input-left{
+    position: absolute;
+    left:16px;
+    bottom:0;
+    top:0;
+    margin: auto;
+    z-index: 1;
+    height: 24px;
+}
+
+.custom-form .custom-icon-input-right{
+    position: absolute;
+    right:16px;
+    bottom:0;
+    top:0;
+    margin: auto;
+    z-index: 1;
+    height: 24px;
+}
+
+.custom-form .custom-icon-input-right-eyes{
+    position: absolute;
+    right:16px;
+    bottom:0;
+    top:0;
+    margin: auto;
+    z-index: 1;
+    height: 20px;
+}
+
+.custom-form-search {
+    --background: #fff;
+    --color: #C2C2C2;
+    --placeholder-color: #C2C2C2;
+    --placeholder-opacity: 1;
+    --padding-bottom: 8px;
+    --padding-end: 45px;
+    --padding-start: 45px;
+    --padding-top: 8px;
+    --border-radius:8px;
+    --highlight-color-focused: none;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+}
+
+.custom-form-search .custom-icon-input-left{
+    position: absolute;
+    left:13px;
+    bottom:0;
+    top:0;
+    margin: auto;
+    z-index: 1;
+    height: 20px;
+}
+
+.custom-icon-select-left{
+    height: 24px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 2
+}
+
+ion-select{
+    position: relative;
+}
+
+ion-select::part(icon) {
+    position: absolute;
+    right:16px;
+}
+
+.custom-button {
+    --background: #2F63C8;
+    --color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --border-radius:8px;
+    text-transform: capitalize;
+}
+.custom-button-red {
+    --background: red;
+    --color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --border-radius:8px;
+    text-transform: capitalize;
+}
+
+
+.custom-button-light {
+    --background: #E8F3FF;
+    --color:#2F63C8;
+    font-size: 16px;
+    font-weight: 600;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --border-radius:8px;
+    text-transform: capitalize;
+}
+
+ion-label{
+    font-size: 14px;
+    color: #0A0A0A;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.custom-toolbar-full {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.custom-toolbar {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.custom-toolbar .left{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.custom-toolbar .right{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.custom-toolbar-search {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.custom-toolbar-search .left{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-toolbar-search .right{
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#page-home .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;  /* <-- modified to show under de img */
+    top: var(--swiper-pagination-top, auto);
+    left: 15px;
+    width: auto;
+}
+
+#page-home .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+#page-home .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+
+#page-cetak-barcode .swiper-button-next{
+    left:15px;
+    right:0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+
+#page-cetak-barcode .swiper-button-prev{
+    left:-35px;
+    right:0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+
+.action-sheet-button.sc-ion-action-sheet-md{
+    font-weight: 400;
+    font-size: 14px;
+    color: #0A0A0A;
+    min-height: 46px;
+    border-bottom: 1px solid #E0E0E0;
+}

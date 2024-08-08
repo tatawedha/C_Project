@@ -31,7 +31,7 @@
 					href="/index/wallet">
 					<ion-icon
 						aria-hidden="true"
-						:icon="walletOutline" />
+						:icon="pieChartOutline" />
 				</ion-tab-button>
 				<ion-tab-button
 					tab="tab5"
@@ -46,8 +46,8 @@
 </template>
 
 <script setup lang="ts">
-	import { IonApp, IonRouterOutlet, IonTabButton, IonTabBar } from "@ionic/vue";
-	import { swapHorizontalOutline, homeOutline, personOutline, syncOutline, walletOutline } from "ionicons/icons";
+	import { IonApp, IonRouterOutlet, IonTabButton, IonTabBar, IonTabs } from "@ionic/vue";
+	import { swapHorizontalOutline, homeOutline, personOutline, syncOutline, pieChartOutline } from "ionicons/icons";
 </script>
 
 <style>
